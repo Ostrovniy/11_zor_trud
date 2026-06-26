@@ -3,6 +3,7 @@ from fastapi import FastAPI
 app = FastAPI()
 
 # Первый запрос: GET /users
+# Комментрий 1
 @app.get("/users")
 def read_users():
     return [
@@ -11,6 +12,7 @@ def read_users():
     ]
 
 # Второй запрос: POST /posts
+# Комментрий 2
 @app.get("/posts")
 def read_posts():
     # Теперь этот эндпоинт принимает данные (через data) и возвращает список
