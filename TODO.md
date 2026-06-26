@@ -20,3 +20,17 @@
   * RBAC — Role-Based Access Control
   * OAuth 2.0 (Google)
   * Middleware
+* **Медиа**
+  * Object Storage (S3)
+  * Pre-signed URL
+  * Media Pipeline
+  * CDN (Content Delivery Network)
+  * Lazy Loading
+  * Low Quality Image Placeholder
+* **More**
+  * MapLibre GL JS
+  * MongoDB
+
+# 🤖 Етап 1
+
+Создайте пустой шаблон для бэкенда и фронтенда. Основная цель — чтобы один человек мог спокойно запускать проект у себя локально для тестирования. Также упростите запуск проекта, если для него требуется выполнить много команд в консоли. Вторая цель — совместная работа с Git.
