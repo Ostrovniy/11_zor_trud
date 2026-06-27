@@ -10,7 +10,3 @@ npm install
 npm run dev
 
 4. Открыть в браузере ссылку из консоли (обычно http://localhost:5173)
-
-** для проверки production-сборки:
-npm run build    — собирает проект (с проверкой типов) в папку dist
-npm run preview  — локально поднимает собранную версию
