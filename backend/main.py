@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from pydantic import BaseModel
 
 app = FastAPI()
 
@@ -10,6 +11,16 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+class Item(BaseModel):
+    name: str
+    price: float
+    is_offert: bool | None = None
+    
+
+@app.get("/")
+async def root():
+    return {"text": "hello"}
 
 # Первый запрос: GET /users
 # Комментрий 1
@@ -29,3 +40,7 @@ def read_posts():
         {'title': 'заголовок1', 'content': 'контент1'}, 
         {'title': 'заголовок2', 'content': 'контент2'}
     ]
+    
+@app.put('/items/{item_id}')
+def test_put(item_id: int, item: Item):
+    return {"item_name": item.name, "item_id": item_id}
