@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Local tooling artifacts (Lavish, Playwright screenshots)
+.lavish/
+.playwright-mcp/
